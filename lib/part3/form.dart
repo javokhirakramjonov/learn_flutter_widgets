@@ -71,18 +71,18 @@ class _LoginFormState extends State<LoginForm> {
                       if (formKey.currentState?.validate() == true) {
                         final login = loginController.text;
                         final password = passwordController.text;
-                        setState((){
+                        setState(() {
                           isSuccessful = login == 'user' && password == '1234';
                         });
                       }
                     },
                     child: Text("Login"),
                   ),
-                  if(isSuccessful)
-                  Text(
-                    "Hey you have found the correct credentials",
-                    style: TextStyle(color: Colors.green, fontSize: 24),
-                  ),
+                  if (isSuccessful)
+                    Text(
+                      "Hey you have found the correct credentials",
+                      style: TextStyle(color: Colors.green, fontSize: 24),
+                    ),
                 ],
               ),
             ),

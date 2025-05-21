@@ -15,10 +15,10 @@ Focus: User input & dynamic behavior
 -------------------------------------
 1. TextField – simple input
 2. StatefulWidget – managing basic UI state
-3. TextFormField – input with validation
-4. Form – wrapping input fields
-5. Checkbox, Switch, RadioListTile – selection widgets
-6. setState() – triggering rebuilds
+3. setState() – triggering rebuilds
+4. TextFormField – input with validation
+5. Form – wrapping input fields
+6. Checkbox, Switch, RadioListTile – selection widgets
 7. GestureDetector – detecting taps, long presses
 8. SnackBar – feedback messages
 

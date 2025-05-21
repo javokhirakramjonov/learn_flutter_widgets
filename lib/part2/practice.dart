@@ -10,16 +10,15 @@ class SettingsScreen extends StatelessWidget {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
-          child: Column(children: [
-            _buildHeader(),
-            const SizedBox(height: 24),
-            Divider(
-              color: Color(0xff3E3D3D),
-              thickness: 1,
-            ),
-            const SizedBox(height: 24),
-            _buildPart1(),
-          ]),
+          child: Column(
+            children: [
+              _buildHeader(),
+              const SizedBox(height: 24),
+              Divider(color: Color(0xff3E3D3D), thickness: 1),
+              const SizedBox(height: 24),
+              _buildPart1(),
+            ],
+          ),
         ),
       ),
     );
@@ -86,9 +85,9 @@ class SettingsScreen extends StatelessWidget {
             Text(
               'Your Channel',
               style: TextStyle(color: Colors.white, fontSize: 16),
-            )
+            ),
           ],
-        )
+        ),
       ],
     );
   }

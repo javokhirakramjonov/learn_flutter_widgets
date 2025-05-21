@@ -60,7 +60,7 @@ class LearnWidgetsPart1 extends StatelessWidget {
                   fontStyle: FontStyle.italic,
                 ),
               ),
-              interestingWidget()
+              interestingWidget(),
             ],
           ),
         ),
