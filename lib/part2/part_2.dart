@@ -7,13 +7,11 @@ class Part2Example extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text(
-              'Part 2',
-              style: TextStyle(
-                color: Theme.of(context).colorScheme.onPrimary
-              )
-          ),
-          backgroundColor: Theme.of(context).colorScheme.primary,
+        title: Text(
+          'Part 2',
+          style: TextStyle(color: Theme.of(context).colorScheme.onPrimary),
+        ),
+        backgroundColor: Theme.of(context).colorScheme.primary,
       ),
       body: SafeArea(
         child: SingleChildScrollView(
