@@ -83,7 +83,17 @@ class NewsScreen extends StatelessWidget {
         onTap: onTap,
         child: Column(
           children: [
-            Image.network(news.imageUrl),
+            Image.network(news.imageUrl,
+                loadingBuilder: (context, child, loadingProgress) {
+              if (loadingProgress == null) {
+                return child;
+              }
+              return Center(
+                  child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: CircularProgressIndicator(),
+              ));
+            }),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
