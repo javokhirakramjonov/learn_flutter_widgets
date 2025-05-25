@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:learn_widgets/part3/part_3.dart';
+import 'package:learn_widgets/part4/part_4.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
       ),
-      home: Part3(),
+      home: Part4(),
     );
   }
 }
